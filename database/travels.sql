@@ -82,3 +82,21 @@ CREATE TABLE `comments` (
   `pname` varchar(20) NOT NULL,
   `comment` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `comments`
+--
+
+INSERT INTO `comments` (`cid`, `pname`, `comment`) VALUES
+(7, 'Eilat', 'this place is good to visit please come here!!!'),
+(37, 'Eilat', 'super place to visit'),
+(40, 'Eilat', 'nice experience '),
+(43, 'Eilat', 'I had good experience in this tour'),
+(50, 'Eilat', 'best place has good whether'),
+(51, 'banias River', 'good wheather nice place nice peoples best experience'),
+(52, 'nazareth', 'little bit trafic is there and rest is good'),
+(53, 'jurselm', 'very good wheather nice place and good service by the company'),
+(54, 'Eilat', 'good website'),
+(55, 'nazareth', 'best place has good whether  nice place good people');
+
+-- --------------------------------------------------------
