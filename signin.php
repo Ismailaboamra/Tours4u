@@ -57,7 +57,7 @@ if(isset($_POST['submit'])){
 		}
 		if ($usern==$username and $passd==$password) {
 			$result = mysqli_query($db, $que);
-			header("location:index.php");
+			header("location:index2.php");
 		}
 		else{
 			?>
