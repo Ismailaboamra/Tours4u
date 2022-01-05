@@ -33,3 +33,16 @@ CREATE TABLE `advertise` (
   `ad_img` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `advertise`
+--
+
+INSERT INTO `advertise` (`aid`, `aname`, `ad_img`) VALUES
+(1, 'College ad', 'images//ads//ad1.jpg'),
+(2, 'Amazon Ads', 'images//ads//ad2.jpg'),
+(3, 'Audible Ad', 'images//ads//ad3.jpg'),
+(4, 'ezoic ad', 'images//ads//ad4.jpg'),
+(5, 'management', 'images//ads//ad5.jpg'),
+(6, 'Food ad', 'images//ads//ad6.jpg');
+
+-- --------------------------------------------------------
