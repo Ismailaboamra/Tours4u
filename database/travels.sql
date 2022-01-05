@@ -57,3 +57,18 @@ CREATE TABLE `feedback` (
   `email` varchar(30) NOT NULL,
   `feedbk` varchar(1000) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `feedback`
+--
+
+INSERT INTO `feedback` (`id`, `name`, `email`, `feedbk`) VALUES
+(1, 'joy', 'joy123@gmail.com', 'good website'),
+(2, 'amar', 'amar56@gmail.com', 'nice website'),
+(3, 'adam', 'adamgray@gmail.com', 'your website looks good and nice user interface'),
+(4, 'adam', 'adamgray@gmail.com', 'your website looks good and nice user interface'),
+(5, 'arjun', 'arjun45@gmal.com', 'good website'),
+(6, 'Hitesh', 'hitesh43jk@gmai.com', 'its good website nice user interface'),
+(7, 'kiran', 'kiran35@gmail.com', 'this is a good website');
+
+-- --------------------------------------------------------
