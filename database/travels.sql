@@ -46,3 +46,13 @@ INSERT INTO `advertise` (`aid`, `aname`, `ad_img`) VALUES
 (6, 'Food ad', 'images//ads//ad6.jpg');
 
 -- --------------------------------------------------------
+
+--
+-- Table structure for table `comments`
+--
+
+CREATE TABLE `comments` (
+  `cid` int(10) NOT NULL,
+  `pname` varchar(20) NOT NULL,
+  `comment` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
