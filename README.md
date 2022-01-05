@@ -1,7 +1,4 @@
-<<<<<<< HEAD
-# Tours4u
-kuhadsjgasdkhashdaskjd
-=======
+
 <h1 align="left">Tours4U</h1>
 <div class="myform">
         <form action="contact.html" method="post">
