@@ -72,3 +72,13 @@ INSERT INTO `feedback` (`id`, `name`, `email`, `feedbk`) VALUES
 (7, 'kiran', 'kiran35@gmail.com', 'this is a good website');
 
 -- --------------------------------------------------------
+
+--
+-- Table structure for table `comments`
+--
+
+CREATE TABLE `comments` (
+  `cid` int(10) NOT NULL,
+  `pname` varchar(20) NOT NULL,
+  `comment` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
