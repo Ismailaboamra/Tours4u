@@ -236,6 +236,32 @@ INSERT INTO `login` (`user`, `pass`, `date_time`) VALUES
 ('admin', 'ad123', '2022-01-02 01:40:30pm');
 
 -- --------------------------------------------------------
+--
+-- Table structure for table `payment`
+--
+
+CREATE TABLE `payment` (
+  `name` varchar(20) NOT NULL,
+  `email` varchar(20) NOT NULL,
+  `phone` varchar(100) NOT NULL,
+  `city` varchar(10) NOT NULL,
+  `cardname` varchar(20) NOT NULL,
+  `cardnumber` varchar(100) NOT NULL,
+  `expmonth` varchar(10) NOT NULL,
+  `expyear` varchar(10) NOT NULL,
+  `cvv` varchar(10) NOT NULL,
+  `payId` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `payment`
+--
+
+INSERT INTO `payment` (`name`, `email`, `phone`, `city`, `cardname`, `cardnumber`, `expmonth`, `expyear`, `cvv`, `payId`) VALUES
+('amar', 'amar@gmail.com', '4564655465', 'jurselm', 'Amar', '4596-7412-', 'April', '2022', '142', 1);
+
+-- --------------------------------------------------------
+
 
 
 --
