@@ -125,6 +125,27 @@ INSERT INTO `feedback` (`id`, `name`, `email`, `feedbk`) VALUES
 -- Table structure for table `information`
 --
 
+--
+-- Table structure for table `hotels`
+--
+
+CREATE TABLE `hotels` (
+  `hid` int(10) NOT NULL,
+  `hname` varchar(20) NOT NULL,
+  `hphone` varchar(15) NOT NULL,
+  `hcity` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `hotels`
+--
+
+INSERT INTO `hotels` (`hid`, `hname`, `hphone`, `hcity`) VALUES
+(1, 'Taj Hotel', '78869565', 'Mumbai'),
+(2, 'Hotel High', '78869565', 'Benglore');
+
+-- --------------------------------------------------------
+
 CREATE TABLE `information` (
   `placeid` int(10) NOT NULL,
   `pname` varchar(30) NOT NULL,
