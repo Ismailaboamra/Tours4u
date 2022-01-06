@@ -46,6 +46,55 @@ INSERT INTO `advertise` (`aid`, `aname`, `ad_img`) VALUES
 (6, 'Food ad', 'images//ads//ad6.jpg');
 
 -- --------------------------------------------------------
+--
+-- Table structure for table `booking`
+--
+
+CREATE TABLE `booking` (
+  `id` int(10) NOT NULL,
+  `ffirst` varchar(20) NOT NULL,
+  `flast` varchar(20) NOT NULL,
+  `femail` varchar(30) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `fphone` int(15) NOT NULL,
+  `fdesti` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+--
+-- Dumping data for table `booking`
+--
+
+INSERT INTO `booking` (`id`, `ffirst`, `flast`, `femail`, `city`, `fphone`, `fdesti`) VALUES
+(1, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'Honnavar', 2147483647, 'Eilat'),
+(2, 'kiran', 'Naik', 'kirannaik1@gmail.com', 'Honnavar', 845868956, 'banias River'),
+(7, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'Honnavar', 2147483647, 'jurselm'),
+(8, 'Hitesh', 'HT', 'hitesh45jk@gmail.com', 'Udupi', 458696561, 'TheDeadSea'),
+(9, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'Honnavar', 2147483647, 'Sea of Galilee'),
+(10, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'Honnavar', 2147483647, 'nazareth'),
+(11, 'Gajanan', 'Bhat', 'gajabhat@gmail.com', 'Kumta', 2147483647, 'mountain hermon'),
+(12, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'Honnavar', 2147483647, 'Kerala'),
+(13, 'Adil', 'SS', 'mail@gmail.com', 'Chicago', 2147483647, 'Eilat'),
+(14, 'Mahesh', 'np', 'maheshnp@gmail.com', 'Eilat', 1485966311, 'TheDeadSea'),
+(15, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'Sea of Galilee', 2147483647, 'Sea of Galilee'),
+(16, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'Jaffa', 2147483647, 'Jaffa'),
+(17, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'h', 2147483647, 'Jaffa'),
+(18, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'h', 2147483647, 'Jaffa'),
+(19, '', '', '', '', 0, ''),
+(20, '', '', '', '', 0, ''),
+(21, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'h', 2147483647, 'Jaffa'),
+(22, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'h', 2147483647, 'Jaffa'),
+(23, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'h', 2147483647, 'Jaffa'),
+(24, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'h', 2147483647, 'Jaffa'),
+(25, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'h', 2147483647, 'Jaffa'),
+(26, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'h', 2147483647, 'Jaffa'),
+(27, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'h', 2147483647, 'Jaffa'),
+(28, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'h', 2147483647, 'Jaffa'),
+(29, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'h', 2147483647, 'Jaffa'),
+(30, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'h', 2147483647, 'Jaffa'),
+(31, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'h', 2147483647, 'Jaffa'),
+(32, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'Mangalore', 2147483647, 'Akko'),
+(33, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'Mangalore', 2147483647, 'Eliate');
+
+-- --------------------------------------------------------
 
 --
 -- Table structure for table `feedback`
