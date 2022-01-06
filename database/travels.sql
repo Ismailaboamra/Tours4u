@@ -46,6 +46,19 @@ INSERT INTO `advertise` (`aid`, `aname`, `ad_img`) VALUES
 (6, 'Food ad', 'images//ads//ad6.jpg');
 
 -- --------------------------------------------------------
+--
+-- Table structure for table `booking`
+--
+
+CREATE TABLE `booking` (
+  `id` int(10) NOT NULL,
+  `ffirst` varchar(20) NOT NULL,
+  `flast` varchar(20) NOT NULL,
+  `femail` varchar(30) NOT NULL,
+  `city` varchar(20) NOT NULL,
+  `fphone` int(15) NOT NULL,
+  `fdesti` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Table structure for table `feedback`
