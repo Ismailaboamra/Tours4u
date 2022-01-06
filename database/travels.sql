@@ -70,6 +70,44 @@ INSERT INTO `feedback` (`id`, `name`, `email`, `feedbk`) VALUES
 (5, 'arjun', 'arjun45@gmal.com', 'good website'),
 (6, 'Hitesh', 'hitesh43jk@gmai.com', 'its good website nice user interface'),
 (7, 'kiran', 'kiran35@gmail.com', 'this is a good website');
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `information`
+--
+
+CREATE TABLE `information` (
+  `placeid` int(10) NOT NULL,
+  `pname` varchar(30) NOT NULL,
+  `pdescription` varchar(10000) NOT NULL,
+  `pi_main` varchar(1000) NOT NULL,
+  `pi1` varchar(1000) NOT NULL,
+  `pi2` varchar(1000) NOT NULL,
+  `pi3` varchar(1000) NOT NULL,
+  `package` int(20) NOT NULL,
+  `likes` int(255) NOT NULL,
+  `temprature` int(10) NOT NULL,
+  `duration` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `information`
+--
+
+INSERT INTO `information` (`placeid`, `pname`, `pdescription`, `pi_main`, `pi1`, `pi2`, `pi3`, `package`, `likes`, `temprature`, `duration`) VALUES
+(1, 'Eila','Eilat is part of the Southern Negev Desert, at the southern end of the Arabah, adjacent to the Egyptian resort city of Taba to the south, the Jordanian port city of Aqaba to the east, and within sight of Haql, Saudi Arabia, across the gulf to the southeast.Eilats arid desert climate and low humidity are moderated by proximity to a warm sea. Temperatures often exceed 40 °C (104 °F) in summer, and 21 °C (70 °F) in winter, while water temperatures range between 20 and 26 °C (68 and 79 °F). Eilat averages 360 sunny days a year.[2]' 'images//destination//goa1.jpg', 'images//destination//goa2.jpg', 'images//destination//goa3.jpg', 'images//destination//goa4.jpg', 15000, 34, 31, 6),
+(2, 'banias River', 'Banias River is a river in the Israeli-occupied Golan Heights. It is the easternmost of the three main northern tributaries of the Jordan River; together with the Dan River and the Snir Stream, it forms the Jordan Rivers upper catchment. Israel has included the stream in the Hermon nature reserve. ', 'images//destination//kerala1.jpg', 'images//destination//kerala2.jpg', 'images//destination//kerala3.jpg', 'images//destination//kerala4.jpg', 10000, 163, 38, 5),
+(3, 'jurselm', '  Jerusalem is a city in Western Asia, on a plateau in the Judaean Mountains between the Mediterranean and the Dead Sea. It is one of the oldest cities in the world, and is considered holy to the three major Abrahamic religions—Judaism, Christianity, and Islam.', 'images//destination//mysore1.jpg', 'images//destination//mysore2.jpg', 'images//destination//mysore3.jpg', 'images//destination//mysore4.jpg', 9000, 10, 25, 4),
+(4, 'TheDeadSea', 'The Dead Sea is a salt lake bordered by Jordan to the east and Israel and the West Bank to the west. It lies in the Jordan Rift Valley, and its main tributary is the Jordan River. The lakes surface is 430.5 metres below sea level, making its shores the lowest land-based elevation on Earth.', 'images//destination//ladakh1.jpg', 'images//destination//ladakh2.jpg', 'images//destination//ladakh3.jpg', 'images//destination//ladakh4.jpg', 20000, 8, 28, 3),
+(5, 'Sea of Galilee', '  The Sea of Galilee, also called Lake Tiberias, Kinneret or Kinnereth, is a freshwater lake in Israel. It is the lowest freshwater lake on Earth and the second-lowest lake in the world, at levels between 215 metres and 209 metres below sea level', 'images//destination//tajmahal1.jpg', 'images//destination//tajmahal2.jpg', 'images//destination//tajmahal3.jpg', 'images//destination//tajmahal4.jpg', 19000, 23, 25, 8),
+(6, 'mountain hermon', '  Mount Hermon is a mountain cluster constituting the southern end of the Anti-Lebanon mountain range. Its summit straddles the border between Syria and Lebanon and, at 2,814 m above sea level, is the highest point in Syria', 'images//destination//india_gate1.jpg', 'images//destination//india_gate2.jpg', 'images//destination//india_gate3.jpg', 'images//destination//india_gate4.jpg', 10000, 37, 30, 5),
+(8, 'TelAviv', 'Tel Aviv, is the most populous city in the Gush Dan metropolitan area of Israel. Located on the Israeli Mediterranean coastline and with a population of 460,613, it is the economic and technological center of the country. If East Jerusalem is considered part of Israel, Tel Aviv is the country\''s second most populous city after Jerusalem; if not, Tel Aviv is the most populous city ahead of West Jerusalem.[a]\r\n\r\nTel Aviv is governed by the Tel Aviv-Yafo Municipality, headed by Mayor Ron Huldai, and is home to many foreign embassies.[b] It is a beta+ world city and is ranked 41st in the Global Financial Centres Index. Tel Aviv has the third- or fourth-largest economy and the largest economy per capita in the Middle East.[6][7]', 'images//gallery//TelAviv3.jpg', 'images//destination//rajasthan2.jpg', 'images//destination//rajasthan3.jpg', 'images//destination//rajasthan4.jpg', 16000, 29, 20, 3),
+(9, 'Haifa', '  Haifa is a northern Israeli port city built in tiers extending from the Mediterranean up the north slope of Mount Carmel. The city’s most iconic sites are the immaculately landscaped terraces of the Baháí Gardens and, at their heart, the gold-domed Shrine of the Báb. At the foot of the gardens lies the German Colony, with shops, galleries and restaurants in 19th-century buildings.', 'images//destination//manali1.jpg', 'images//destination//manali2.jpg', 'images//destination//manali3.jpg', 'images//destination//manali4.jpg', 21000, 2, 26, 9),
+(10, 'Jaffa', '  Jaffa, in Hebrew Yafo and in Arabic Yafa and also called Japho or Joppa, the southern and oldest part of Tel Aviv-Yafo, is an ancient port city in Israel.', 'images//destination//srinagar1.jpg', 'images//destination//srinagar2.jpg', 'images//destination//srinagar3.jpg', 'images//destination//srinagar4.jpg', 21200, 1, 29, 7),
+(11, 'Ramon Crater', '  Makhtesh Ramon is a geological feature of Israels Negev desert. Located some 85 km south of the city of Beersheba, the landform is not an impact crater from a meteor nor a volcanic crater formed by a volcanic eruption, but rather is the worlds largest erosion cirque.', 'images//destination//amritsar1.jpg', 'images//destination//amritsar2.jpg', 'images//destination//amritsar3.jpg', 'images//destination//amritsar4.jpg', 19000, 2, 36, 4),
+(12, 'Akko', ' Acre (Akko) is a port city in northwest Israel, on the Mediterranean coast. It’s known for its well-preserved old city walls. In a tunnel in the walls is the Treasures in the Walls Ethnographic Museum, depicting daily life from the Ottoman times to the 20th century. The mosaic-covered Or Torah (Tunisian) Synagogue has 7 torah arks. The 18th-century Al-Jazzar Mosque has marble pillars and', 'images//destination//jogfalls1.jpg', 'images//destination//jogfalls2.jpg', 'images//destination//jogfalls3.jpg', 'images//destination//jogfalls4.jpg', 5000, 11, 19, 5);
+
+-- --------------------------------------------------------
 
 -- --------------------------------------------------------
 
