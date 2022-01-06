@@ -95,6 +95,63 @@ INSERT INTO `booking` (`id`, `ffirst`, `flast`, `femail`, `city`, `fphone`, `fde
 (33, 'Ganesh', 'Naik', 'ganeshravinaik2001@gmail.com', 'Mangalore', 2147483647, 'Eliate');
 
 -- --------------------------------------------------------
+--
+-- Table structure for table `comments`
+--
+
+CREATE TABLE `comments` (
+  `cid` int(10) NOT NULL,
+  `pname` varchar(20) NOT NULL,
+  `comment` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `comments`
+--
+
+INSERT INTO `comments` (`cid`, `pname`, `comment`) VALUES
+(7, 'Eilat', 'this place is good to visit please come here!!!'),
+(37, 'Eilat', 'super place to visit'),
+(40, 'Eilat', 'nice experience '),
+(43, 'Eilat', 'I had good experience in this tour'),
+(50, 'Eilat', 'best place has good whether'),
+(51, 'banias River', 'good wheather nice place nice peoples best experience'),
+(52, 'nazareth', 'little bit trafic is there and rest is good'),
+(53, 'jurselm', 'very good wheather nice place and good service by the company'),
+(54, 'Eilat', 'good website'),
+(55, 'nazareth', 'best place has good whether  nice place good people');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `customer`
+--
+
+CREATE TABLE `customer` (
+  `id` int(10) NOT NULL,
+  `fname` varchar(20) NOT NULL,
+  `password` varchar(10) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `city` varchar(10) NOT NULL,
+  `phone` bigint(12) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `customer`
+--
+
+INSERT INTO `customer` (`id`, `fname`, `password`, `email`, `city`, `phone`) VALUES
+(34, 'admin', 'Adm12345', 'admintms@gmail.com', 'Honnavar', 8971046276),
+(51, 'Saber', 'Gane1234', 'ganeshravinaik2001@gmail.com', 'Honnavar', 8971046276),
+(72, 'Salah', 'Adi12389', 'adityag45@gmail.com', 'Manglore', 8574968283),
+(73, 'Isamil', 'GAjju700', 'gajabhat@gmail.com', 'Kumta', 7984768581),
+(74, 'Israa', 'AJkiran1', 'kiranaj56@gmail.com', 'Honnavar', 7586949199),
+(75, 'Ahmed', 'Pra23444', 'prasad24@gmail.com', 'Honnavar', 7485961256),
+(76, 'Moshe', 'Mahi1233', 'maheshmm@gmail.com', 'Kumta', 9978488656),
+(78, 'Yosef', 'Nishi789', 'nishibhatt234@gmail.com', 'Udupi', 7485961236),
+(80, 'Sayed', 'G@nesh12', 'ganeshravinaik@gmail.com', 'Mangalore', 8971046276);
+
+
 
 --
 -- Table structure for table `feedback`
@@ -121,9 +178,7 @@ INSERT INTO `feedback` (`id`, `name`, `email`, `feedbk`) VALUES
 (7, 'kiran', 'kiran35@gmail.com', 'this is a good website');
 -- --------------------------------------------------------
 
---
--- Table structure for table `information`
---
+
 
 --
 -- Table structure for table `hotels`
@@ -282,63 +337,47 @@ INSERT INTO `places` (`pid`, `pname`, `pcity`) VALUES
 (4, 'Kerala Beach', 'Kerala'),
 (5, 'Mysore Palace', 'Mysore'),
 (6, 'Ladakh', 'Ladakh India');
-
-
-
-
 --
--- Table structure for table `comments`
+-- Table structure for table `travel_agent`
 --
 
-CREATE TABLE `comments` (
-  `cid` int(10) NOT NULL,
-  `pname` varchar(20) NOT NULL,
-  `comment` varchar(100) NOT NULL
+CREATE TABLE `travel_agent` (
+  `aid` int(10) NOT NULL,
+  `afname` varchar(20) NOT NULL,
+  `apass` varchar(20) NOT NULL,
+  `aemail` varchar(30) NOT NULL,
+  `aphone` int(15) NOT NULL,
+  `acity` varchar(20) NOT NULL,
+  `type` varchar(20) NOT NULL,
+  `certificate` varchar(30) NOT NULL,
+  `available` varchar(10) NOT NULL,
+  `vcertificate` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
--- Dumping data for table `comments`
+-- Dumping data for table `travel_agent`
 --
 
-INSERT INTO `comments` (`cid`, `pname`, `comment`) VALUES
-(7, 'Eilat', 'this place is good to visit please come here!!!'),
-(37, 'Eilat', 'super place to visit'),
-(40, 'Eilat', 'nice experience '),
-(43, 'Eilat', 'I had good experience in this tour'),
-(50, 'Eilat', 'best place has good whether'),
-(51, 'banias River', 'good wheather nice place nice peoples best experience'),
-(52, 'nazareth', 'little bit trafic is there and rest is good'),
-(53, 'jurselm', 'very good wheather nice place and good service by the company'),
-(54, 'Eilat', 'good website'),
-(55, 'nazareth', 'best place has good whether  nice place good people');
+INSERT INTO `travel_agent` (`aid`, `afname`, `apass`, `aemail`, `aphone`, `acity`, `type`, `certificate`, `available`, `vcertificate`) VALUES
+(1, 'amar', 'Amar@123', 'amarraj123@gmail.com', 85749646, 'Eilat', 'Medical', 'Screenshot (15).png', 'Yes', 'Screenshot (263).png'),
+(2, 'akhil', 'Akhi@123', 'akhil23@gmai.com', 45968678, 'banias River', 'Medical', 'Screenshot (13).png', 'Yes', ''),
+(3, 'kiran', 'kira@123', 'kiru34@gmail.com', 78969665, 'jurselm', 'Medical', '', 'Yes', ''),
+(4, 'satya', 'saty@123', 'satya@gmail.com', 2147483647, 'TheDeadSea', 'Medical', '', 'Yes', ''),
+(5, 'Hasan', 'hasa@123', 'hasan@gmail.com', 2147483647, 'Sea of Galilee', 'Normal', '', 'Yes', ''),
+(6, 'Adil', 'adil@123', 'adil@gmail.com', 2147483647, 'mountain hermon', 'Normal', '', 'Yes', ''),
+(7, 'rihan', 'riha@123', 'rihan@gmail.com', 2147483647, 'nazareth', 'Normal', '', 'Yes', ''),
+(8, 'vasim', 'vasi@123', 'vasim@gmail.com', 2147483647, 'TelAviv', 'Normal', '', 'Yes', ''),
+(9, 'milka', 'milk@123', 'milka@gmail.com', 2147483647, 'Haifa', 'Normal', '', 'Yes', ''),
+(10, 'vedalm', 'veda@123', 'vedalm@gmail.com', 2147483647, 'Jaffa', 'Normal', '', 'Yes', ''),
+(11, 'shersha', 'sher@123', 'shersha@gmail.com', 2147483647, 'Ramon Crater', 'Normal', '', 'Yes', ''),
+(12, 'sunny', 'sunn@123', 'sunny@gmail.com', 2147483647, 'Akko', 'Armed', 'Screenshot (17).png', 'Yes', ''),
+(13, 'masuma', 'masu@123', 'masuma@gmail.com', 1485749636, 'banias River', 'Medical', '', 'No', ''),
+(14, 'abuday', 'abud@123', 'abudaya@gmail.com', 2147483647, 'TelAviv', 'Armed', '', 'Yes', ''),
+(16, 'deyya', 'deyy@123', 'deyya@gmail.com', 1452857496, 'Sea of Galilee', 'Armed', '', 'Yes', ''),
+(17, 'deepa', 'deep@123', 'deepa@gmail.com', 758589645, 'nazareth', 'Normal', '', 'Yes', ''),
+(18, 'Lalma', 'Lalm@123', 'Lalma@gmail.com', 2147483647, 'Akko', 'Normal', '', '', '');
 
--- --------------------------------------------------------
 
---
--- Table structure for table `customer`
---
 
-CREATE TABLE `customer` (
-  `id` int(10) NOT NULL,
-  `fname` varchar(20) NOT NULL,
-  `password` varchar(10) NOT NULL,
-  `email` varchar(30) NOT NULL,
-  `city` varchar(10) NOT NULL,
-  `phone` bigint(12) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
---
--- Dumping data for table `customer`
---
-
-INSERT INTO `customer` (`id`, `fname`, `password`, `email`, `city`, `phone`) VALUES
-(34, 'admin', 'Adm12345', 'admintms@gmail.com', 'Honnavar', 8971046276),
-(51, 'Saber', 'Gane1234', 'ganeshravinaik2001@gmail.com', 'Honnavar', 8971046276),
-(72, 'Salah', 'Adi12389', 'adityag45@gmail.com', 'Manglore', 8574968283),
-(73, 'Isamil', 'GAjju700', 'gajabhat@gmail.com', 'Kumta', 7984768581),
-(74, 'Israa', 'AJkiran1', 'kiranaj56@gmail.com', 'Honnavar', 7586949199),
-(75, 'Ahmed', 'Pra23444', 'prasad24@gmail.com', 'Honnavar', 7485961256),
-(76, 'Moshe', 'Mahi1233', 'maheshmm@gmail.com', 'Kumta', 9978488656),
-(78, 'Yosef', 'Nishi789', 'nishibhatt234@gmail.com', 'Udupi', 7485961236),
-(80, 'Sayed', 'G@nesh12', 'ganeshravinaik@gmail.com', 'Mangalore', 8971046276);
 
