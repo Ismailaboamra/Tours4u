@@ -380,4 +380,147 @@ INSERT INTO `travel_agent` (`aid`, `afname`, `apass`, `aemail`, `aphone`, `acity
 
 
 
+--
+-- Indexes for dumped tables
+--
 
+--
+-- Indexes for table `advertise`
+--
+ALTER TABLE `advertise`
+  ADD PRIMARY KEY (`aid`);
+
+--
+-- Indexes for table `booking`
+--
+ALTER TABLE `booking`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `comments`
+--
+ALTER TABLE `comments`
+  ADD PRIMARY KEY (`cid`);
+
+--
+-- Indexes for table `customer`
+--
+ALTER TABLE `customer`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `fname` (`fname`);
+
+--
+-- Indexes for table `feedback`
+--
+ALTER TABLE `feedback`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `hotels`
+--
+ALTER TABLE `hotels`
+  ADD PRIMARY KEY (`hid`);
+
+--
+-- Indexes for table `information`
+--
+ALTER TABLE `information`
+  ADD PRIMARY KEY (`placeid`);
+
+--
+-- Indexes for table `payment`
+--
+ALTER TABLE `payment`
+  ADD PRIMARY KEY (`payId`);
+
+--
+-- Indexes for table `places`
+--
+ALTER TABLE `places`
+  ADD PRIMARY KEY (`pid`);
+
+--
+-- Indexes for table `travel_agent`
+--
+ALTER TABLE `travel_agent`
+  ADD PRIMARY KEY (`aid`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `advertise`
+--
+ALTER TABLE `advertise`
+  MODIFY `aid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `booking`
+--
+ALTER TABLE `booking`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+
+--
+-- AUTO_INCREMENT for table `comments`
+--
+ALTER TABLE `comments`
+  MODIFY `cid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=56;
+
+--
+-- AUTO_INCREMENT for table `customer`
+--
+ALTER TABLE `customer`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=81;
+
+--
+-- AUTO_INCREMENT for table `feedback`
+--
+ALTER TABLE `feedback`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+
+--
+-- AUTO_INCREMENT for table `hotels`
+--
+ALTER TABLE `hotels`
+  MODIFY `hid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+
+--
+-- AUTO_INCREMENT for table `information`
+--
+ALTER TABLE `information`
+  MODIFY `placeid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `payment`
+--
+ALTER TABLE `payment`
+  MODIFY `payId` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT for table `places`
+--
+ALTER TABLE `places`
+  MODIFY `pid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
+-- AUTO_INCREMENT for table `travel_agent`
+--
+ALTER TABLE `travel_agent`
+  MODIFY `aid` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+COMMIT;
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+Eilat is part of the Southern Negev Desert, at the southern end of the Arabah, adjacent to the Egyptian resort city of Taba to the south, the Jordanian port city of Aqaba to the east, and within sight of Haql, Saudi Arabia, across the gulf to the southeast.Eilats arid desert climate and low humidity are moderated by proximity to a warm sea. Temperatures often exceed 40 °C (104 °F) in summer, and 21 °C (70 °F) in winter, while water temperatures range between 20 and 26 °C (68 and 79 °F). Eilat averages 360 sunny days a year.[2]
+  
+  Banias River is a river in the Israeli-occupied Golan Heights. It is the easternmost of the three main northern tributaries of the Jordan River; together with the Dan River and the Snir Stream, it forms the Jordan Rivers upper catchment. Israel has included the stream in the Hermon nature reserve.
+  Jerusalem is a city in Western Asia, on a plateau in the Judaean Mountains between the Mediterranean and the Dead Sea. It is one of the oldest cities in the world, and is considered holy to the three major Abrahamic religions—Judaism, Christianity, and Islam.
+  The Dead Sea is a salt lake bordered by Jordan to the east and Israel and the West Bank to the west. It lies in the Jordan Rift Valley, and its main tributary is the Jordan River. The lakes surface is 430.5 metres below sea level, making its shores the lowest land-based elevation on Earth.
+  The Sea of Galilee, also called Lake Tiberias, Kinneret or Kinnereth, is a freshwater lake in Israel. It is the lowest freshwater lake on Earth and the second-lowest lake in the world, at levels between 215 metres and 209 metres below sea level
+  Mount Hermon is a mountain cluster constituting the southern end of the Anti-Lebanon mountain range. Its summit straddles the border between Syria and Lebanon and, at 2,814 m above sea level, is the highest point in Syria
+  Haifa is a northern Israeli port city built in tiers extending from the Mediterranean up the north slope of Mount Carmel. The city’s most iconic sites are the immaculately landscaped terraces of the Baháí Gardens and, at their heart, the gold-domed Shrine of the Báb. At the foot of the gardens lies the German Colony, with shops, galleries and restaurants in 19th-century buildings.
+  Jaffa, in Hebrew Yafo and in Arabic Yafa and also called Japho or Joppa, the southern and oldest part of Tel Aviv-Yafo, is an ancient port city in Israel.
+  Makhtesh Ramon is a geological feature of Israels Negev desert. Located some 85 km south of the city of Beersheba, the landform is not an impact crater from a meteor nor a volcanic crater formed by a volcanic eruption, but rather is the worlds largest erosion cirque.
+  Acre (Akko) is a port city in northwest Israel, on the Mediterranean coast. It’s known for its well-preserved old city walls. In a tunnel in the walls is the Treasures in the Walls Ethnographic Museum, depicting daily life from the Ottoman times to the 20th century. The mosaic-covered Or Torah (Tunisian) Synagogue has 7 torah arks. The 18th-century Al-Jazzar Mosque has marble pillars and
