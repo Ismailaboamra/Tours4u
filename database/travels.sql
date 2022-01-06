@@ -100,3 +100,32 @@ INSERT INTO `comments` (`cid`, `pname`, `comment`) VALUES
 (55, 'nazareth', 'best place has good whether  nice place good people');
 
 -- --------------------------------------------------------
+
+--
+-- Table structure for table `customer`
+--
+
+CREATE TABLE `customer` (
+  `id` int(10) NOT NULL,
+  `fname` varchar(20) NOT NULL,
+  `password` varchar(10) NOT NULL,
+  `email` varchar(30) NOT NULL,
+  `city` varchar(10) NOT NULL,
+  `phone` bigint(12) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `customer`
+--
+
+INSERT INTO `customer` (`id`, `fname`, `password`, `email`, `city`, `phone`) VALUES
+(34, 'admin', 'Adm12345', 'admintms@gmail.com', 'Honnavar', 8971046276),
+(51, 'Saber', 'Gane1234', 'ganeshravinaik2001@gmail.com', 'Honnavar', 8971046276),
+(72, 'Salah', 'Adi12389', 'adityag45@gmail.com', 'Manglore', 8574968283),
+(73, 'Isamil', 'GAjju700', 'gajabhat@gmail.com', 'Kumta', 7984768581),
+(74, 'Israa', 'AJkiran1', 'kiranaj56@gmail.com', 'Honnavar', 7586949199),
+(75, 'Ahmed', 'Pra23444', 'prasad24@gmail.com', 'Honnavar', 7485961256),
+(76, 'Moshe', 'Mahi1233', 'maheshmm@gmail.com', 'Kumta', 9978488656),
+(78, 'Yosef', 'Nishi789', 'nishibhatt234@gmail.com', 'Udupi', 7485961236),
+(80, 'Sayed', 'G@nesh12', 'ganeshravinaik@gmail.com', 'Mangalore', 8971046276);
+
