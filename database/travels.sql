@@ -261,6 +261,28 @@ INSERT INTO `payment` (`name`, `email`, `phone`, `city`, `cardname`, `cardnumber
 ('amar', 'amar@gmail.com', '4564655465', 'jurselm', 'Amar', '4596-7412-', 'April', '2022', '142', 1);
 
 -- --------------------------------------------------------
+--
+-- Table structure for table `places`
+--
+
+CREATE TABLE `places` (
+  `pid` int(10) NOT NULL,
+  `pname` varchar(20) NOT NULL,
+  `pcity` varchar(20) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `places`
+--
+
+INSERT INTO `places` (`pid`, `pname`, `pcity`) VALUES
+(1, 'Tajmahal', 'Agra'),
+(2, 'Beach', 'Goa'),
+(3, 'India Gate', 'Delhi'),
+(4, 'Kerala Beach', 'Kerala'),
+(5, 'Mysore Palace', 'Mysore'),
+(6, 'Ladakh', 'Ladakh India');
+
 
 
 
