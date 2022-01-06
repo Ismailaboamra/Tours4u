@@ -203,7 +203,7 @@ $result = mysqli_query($db, $que);
     }
     
     
-    //getArray("hello");
+    
     </script>
 
   </body>
